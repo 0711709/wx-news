@@ -50,13 +50,14 @@ Page({
         let head = result.shift();
         result.forEach(it => {
           it.source = it.source ? it.source : "未知来源",
-            it.date = it.date.slice(-13, -8)
+            it.date = it.date.slice(-13, -8),
+            it.firstImage = it.firstImage ? it.firstImage : "/image/new.jpg"
         });
         this.setData({
           headTitle: head.title,
           headDate: head.date.slice(-13, -8),
           headSource: head.source ? head.source : "未知来源",
-          headImage: head.firstImage,
+          headImage: head.firstImage ? head.firstImage: "/image/new.jpg",
           headId: head.id,
           list: result,
         });

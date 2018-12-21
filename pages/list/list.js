@@ -17,12 +17,6 @@ Page({
     this.setData({ id: e.id });
     this.getDetail();
   },
-  //获取数据成功后停止刷新
-  onPullDownRefresh() {
-    this.getDetail(() => {
-      wx.stopPullDownRefresh()
-    })
-  },
   //获取新闻内容
   getDetail(callback) {
     wx.request({
@@ -31,7 +25,6 @@ Page({
         id: this.data.id,
       },
       success: res => {
-        console.log(res.data.result);
         let data = res.data.result;
         this.setData({
           title: data.title,
