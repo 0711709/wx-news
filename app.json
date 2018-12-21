@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#35A2E4",
+    "navigationBarTitleText": "资讯",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}

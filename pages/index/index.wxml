@@ -1,0 +1,31 @@
+<!-- index.wxml -->
+<view class="nav">
+  <view class="nav-item" wx:for="{{nav}}" bindtap="onTapType">
+    <view class="nav-text" style="{{onTap==item.desc? 'font-weight:bold;opacity: 1;': ''}}">
+      {{item.type}}
+    </view>
+    <view wx:if="{{onTap==item.desc}}" class="nav-bottom"></view>
+  </view>
+</view>
+<view class="head" bindtap="onTapList" id="{{headId}}">
+  <image class="head-image" src='{{headImage}}'></image>
+  <view class="head-desc">
+    <view class="head-title">{{headTitle}}</view>
+    <view class="head-info">
+      <view class="source">{{headSource}}</view>
+      <view class="date">{{headDate}}</view>
+    </view>
+  </view>
+</view>
+<view class="list" wx:for="{{list}}" bindtap="onTapList" id="{{item.id}}">
+  <view class="left">
+    <view class="title">{{item.title}}</view>
+    <view class="info">
+      <view class="source">{{item.source}}</view>
+      <view class="date">{{item.date}}</view>
+    </view>
+  </view>
+  <view class="right">
+    <image src="{{item.firstImage}}"></image>
+  </view>
+</view>

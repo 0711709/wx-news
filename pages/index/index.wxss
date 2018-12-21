@@ -1,0 +1,113 @@
+/**index.wxss**/
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #35A2E4;
+}
+
+.nav-item {
+  font-size: 33rpx;
+  line-height: 46rpx;
+  color: #ffffff;
+  height: 70rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.nav-text {
+  margin-bottom: 8rpx;
+  opacity: 0.6;
+}
+
+.nav-bottom {
+  height: 5rpx;
+  width: 30rpx;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+.head {
+  position: relative;
+}
+
+.head-image {
+  display: block;
+  height: 400rpx;
+  width: 100%;
+}
+
+.head-desc {
+  position: absolute;
+  bottom: 0;
+  margin: 30rpx;
+}
+
+.head-title {
+  color: #fff;
+  font-size: 33rpx;
+  line-height: 46rpx;
+  font-weight: bold;
+}
+
+.head-info {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.left .date,
+.left .source,
+.head-info .date,
+.head-info .source {
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 39rpx;
+  margin-right: 30rpx;
+  color: #bbb;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.left {
+  width: 500rpx;
+  height: 175rpx;
+  position: relative;
+  padding-right: 20rpx;
+}
+
+.left .title {
+  color: #000;
+  font-size: 33rpx;
+  line-height: 46rpx;
+  font-weight: bold;
+}
+
+.left .info {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.left .date,
+.left .source {
+  font-weight: 300;
+}
+
+.right {
+  width: 250rpx;
+  height: 175rpx;
+}
+
+.right image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+

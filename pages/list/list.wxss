@@ -1,0 +1,60 @@
+/* pages/list/list.wxss */
+.container {
+    margin: 20rpx;
+    padding: 0;
+}
+
+.header {
+    margin-bottom: 50rpx; 
+}
+
+.header .title {
+    font-size: 40rpx;
+    line-height: 56rpx;
+    font-weight: bold;
+    margin-bottom: 20rpx;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30rpx;
+    line-break: 42rpx;
+}
+
+.desc {
+    display: flex;
+    color: #555;
+}
+
+.desc .source {
+    margin-right: 20rpx;
+}
+
+.info .read {
+    color: #555;
+}
+
+.content-item {
+    text-align: center
+}
+
+.p {
+    font-size: 30rpx;
+    line-height: 42rpx;
+}
+
+.strong {
+    font-size: 30rpx;
+    line-height: 42rpx;
+    font-weight: bold;
+}
+
+image {
+    display: block;
+    width: 710rpx;    
+}
+
+.p, .image, .strong {
+    margin-bottom: 20rpx;
+}

@@ -1,0 +1,17 @@
+<!-- pages/list/list.wxml -->
+<view class="container">
+    <view class="header">
+        <view class='title'>{{title}}</view>
+        <view class="info">
+            <view class="desc">
+                <view class="source">{{source}}</view>
+                <view class="date">{{date}}</view>
+            </view>
+            <view class="read">阅读 {{readCount}}</view>
+        </view>
+    </view>
+    <view class="content-item" wx:for="{{content}}" class="{{item.type}}">
+        {{item.text}}
+        <image wx:if="{{item.type=='image'}}" src="{{item.src}}"></image>
+    </view>
+</view>
