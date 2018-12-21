@@ -52,7 +52,6 @@ Page({
           it.source = it.source ? it.source : "未知来源",
             it.date = it.date.slice(-13, -8)
         });
-        console.log(result);
         this.setData({
           headTitle: head.title,
           headDate: head.date.slice(-13, -8),
@@ -70,13 +69,11 @@ Page({
   //点击切换新闻类别
   onTapType(e) {
     let onTapType = e._relatedInfo.anchorTargetText;
-    this.setData({ onTap: type[onTapType]})
-    console.log(this.data.onTap);
+    this.setData({ onTap: type[onTapType]});
     this.getNew();
   },
   //点击阅读新闻内容
   onTapList(e) {
-    console.log(e);
     let id = e.currentTarget.id
     wx.navigateTo({
       url: '/pages/list/list?id=' + id,
